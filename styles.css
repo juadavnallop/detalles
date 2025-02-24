@@ -1,0 +1,214 @@
+
+/* Paleta de Colores */
+:root {
+  --primary-color: #ff6f61;
+  --secondary-color: #f9f9f9;
+  --text-color: #494949;
+  --hover-color: #ff4d4d;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Tipografía y Estilo Global */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-color);
+  background-color: var(--secondary-color);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--hover-color);
+}
+
+/* Navbar */
+.navbar {
+  background-color: white;
+  box-shadow: 0 4px 6px var(--shadow-color);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.navbar-nav .nav-link {
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--hover-color);
+}
+
+/* Hero Section */
+.hero-section {
+  background: url('flor.jpg') no-repeat center center/cover;
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background-color: white;
+  color: var(--primary-color);
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: var(--hover-color);
+  color: white;
+}
+
+/* Servicios Section */
+.services-section {
+  padding: 5rem 0;
+}
+
+.service-card {
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px var(--shadow-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px var(--shadow-color);
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+/* Productos Section */
+.products-section {
+  padding: 2rem 0;
+  background-color: var(--secondary-color);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.product-item {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px var(--shadow-color);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px var(--shadow-color);
+}
+
+.product-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+/* Continuación de styles.css */
+.product-item h5 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .product-item p {
+    font-size: 0.9rem;
+    color: var(--text-color);
+  }
+  
+  /* Testimonios Section */
+  .testimonials-section {
+    background-color: var(--secondary-color);
+    padding: 5rem 0;
+  }
+  
+  .carousel-item {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .testimonial-text {
+    font-style: italic;
+    color: var(--text-color);
+  }
+  
+  .testimonial-author {
+    font-weight: 600;
+    color: var(--primary-color);
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2rem 0;
+  }
+  
+  .footer a {
+    color: white;
+  }
+  
+  .footer a:hover {
+    color: var(--hover-color);
+  }
+  
+  .social-icons i {
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons i:hover {
+    color: var(--hover-color);
+  }
+  /* Agregar al styles.css */
+.products-section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px var(--shadow-color);
+  }

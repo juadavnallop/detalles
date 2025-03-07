@@ -1,212 +1,167 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Detalles de Amor</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Google Fonts: Poppins -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Regala Arte y Amor - Detalles únicos y personalizados para momentos especiales">
+    <meta name="keywords" content="rosas eternas, detalles personalizados, regalos, amor, arte">
+    <title>Regala Arte y Amor - Detalles Únicos y Personalizados</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
 </head>
 <body>
-  <!-- El resto del HTML se mantiene exactamente igual, solo eliminamos la sección <style> -->
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">Detalles de Amor</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#hero">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#services">Servicios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#testimonials">Testimonios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#footer">Contacto</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    <!-- Header -->
+    <header class="header-transparent" data-aos="fade-down">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Regala Arte y Amor Logo">
+                <h1>Regala<span>Arte</span> y <span>Amor</span></h1>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-  <!-- Hero Section -->
-  <section id="hero" class="hero-section">
-    <div class="container">
-      <h1>Expresa tu Amor con Detalles Únicos</h1>
-      <p>Regalos personalizados que marcan la diferencia.</p>
-      <button class="cta-button">Explorar Ahora</button>
-    </div>
-  </section>
+    <!-- Hero Section -->
+    <section class="hero" data-aos="fade">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
+                <h2>Creamos Momentos Mágicos</h2>
+                <p>Donde cada detalle cuenta una historia de amor y creatividad</p>
+                <div class="hero-buttons">
+                    <a href="rosas-eternas.html" class="btn btn-primary" data-aos="fade-up" data-aos-delay="400">
+                        <i class="fas fa-heart"></i> Rosas Eternas
+                    </a>
+                    <a href="detalles-personalizados.html" class="btn btn-secondary" data-aos="fade-up" data-aos-delay="600">
+                        <i class="fas fa-gift"></i> Detalles Artísticos
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <a href="#productos">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
 
-  <!-- Servicios Section -->
-  <section id="services" class="services-section">
-    <div class="container">
-      <h2 class="text-center mb-5">Nuestros Servicios</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card service-card text-center p-4">
-            <i class="fas fa-box service-icon"></i>
-            <h3>Cajitas Personalizadas</h3>
-            <p>Perfectas para sorprender a tu pareja.</p>
-            <button class="btn btn-primary" id="showCajitas">Mostrar Productos</button>
-          </div>
+    <!-- Featured Products -->
+    <section id="productos" class="featured-products" data-aos="fade-up">
+        <div class="container">
+            <h2 class="section-title">Productos Destacados</h2>
+            <div class="products-grid">
+                <!-- Product 1: Caja de Spiderman -->
+                <div class="product-card">
+                    <div class="product-badge">Popular</div>
+                    <img src="2.jpeg" alt="Caja Sorpresa Spiderman">
+                    <h3>Caja Sorpresa Spiderman</h3>
+                    <p class="product-description">Caja temática con detalles del Hombre Araña y sorpresas personalizadas</p>
+                    <a href="https://wa.me/573115788087?text=Hola,%20me%20interesa%20la%20Caja%20Sorpresa%20Spiderman" class="btn btn-primary order-btn" target="_blank">Hacer Pedido</a>
+                </div>
+                
+                <!-- Product 2: Caja Grande -->
+                <div class="product-card">
+                    <div class="product-badge">Nuevo</div>
+                    <img src="3.jpeg" alt="Caja Grande Deluxe">
+                    <h3>Caja Grande Deluxe</h3>
+                    <p class="product-description">Caja premium con 15 detalles especiales y personalizados</p>
+                    <a href="https://wa.me/573115788087?text=Hola,%20me%20interesa%20la%20Caja%20Grande%20Deluxe" class="btn btn-primary order-btn" target="_blank">Hacer Pedido</a>
+                </div>
+                
+                <!-- Other products with same pattern -->
+                <div class="product-card">
+                    <img src="4.jpeg" alt="Caja Sorpresa Deadpool">
+                    <h3>Caja Sorpresa Deadpool</h3>
+                    <p class="product-description">Caja temática con detalles del mercenario bocazas y sorpresas únicas</p>
+                    <a href="https://wa.me/573115788087?text=Hola,%20me%20interesa%20la%20Caja%20Sorpresa%20Deadpool" class="btn btn-primary order-btn" target="_blank">Hacer Pedido</a>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-badge">Otaku</div>
+                    <img src="5.jpeg" alt="Caja Demon Slayer">
+                    <h3>Caja Demon Slayer</h3>
+                    <p class="product-description">Caja temática con artículos de Kimetsu no Yaiba para fans del anime</p>
+                    <a href="https://wa.me/573115788087?text=Hola,%20me%20interesa%20la%20Caja%20Demon%20Slayer" class="btn btn-primary order-btn" target="_blank">Hacer Pedido</a>
+                </div>
+                
+                <div class="product-card">
+                    <img src="6.jpeg" alt="Caja Dragon Ball">
+                    <h3>Caja Dragon Ball</h3>
+                    <p class="product-description">Caja temática con artículos de Dragon Ball Z para fans de Goku</p>
+                    <a href="https://wa.me/573115788087?text=Hola,%20me%20interesa%20la%20Caja%20Dragon%20Ball" class="btn btn-primary order-btn" target="_blank">Hacer Pedido</a>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-badge">Exclusivo</div>
+                    <img src="7.jpeg" alt="Caja Kira">
+                    <h3>Caja Kira</h3>
+                    <p class="product-description">Caja temática de Death Note con artículos inspirados en Light Yagami</p>
+                    <a href="https://wa.me/573115788087?text=Hola,%20me%20interesa%20la%20Caja%20Kira" class="btn btn-primary order-btn" target="_blank">Hacer Pedido</a>
+                </div>
+                <!-- For the Girasol products (around product 7 and 8) -->
+                <div class="product-card" id="girasoles">
+                    <img src="8.jpeg" alt="Girasol Eterno">
+                    <h3>Girasol Eterno</h3>
+                    <p class="product-description">Hermoso girasol preservado que dura años sin marchitarse</p>
+                    <a href="https://wa.me/573115788087?text=Hola,%20me%20interesa%20el%20Girasol%20Eterno" class="btn btn-primary order-btn" target="_blank">Hacer Pedido</a>
+                </div>
+                
+                <!-- For the Rosas products (around product 10 and 11) -->
+                <div class="product-card" id="rosas">
+                    <div class="product-badge">Destacado</div>
+                    <img src="11.jpeg" alt="Rosas Rosa y Moradas">
+                    <h3>Rosas Rosa y Moradas</h3>
+                    <p class="product-description">Arreglo de rosas eternas en tonos rosa y morado en caja elegante</p>
+                    <a href="https://wa.me/573115788087?text=Hola,%20me%20interesa%20el%20arreglo%20de%20Rosas%20Rosa%20y%20Moradas" class="btn btn-primary order-btn" target="_blank">Hacer Pedido</a>
+                </div>
+                
+                <div class="product-card">
+                    <img src="12.jpeg" alt="Rosas Moradas">
+                    <h3>Rosas Moradas</h3>
+                    <p class="product-description">Arreglo de rosas eternas en tono morado intenso en caja de regalo</p>
+                    <a href="https://wa.me/573115788087?text=Hola,%20me%20interesa%20el%20arreglo%20de%20Rosas%20Moradas" class="btn btn-primary order-btn" target="_blank">Hacer Pedido</a>
+                </div>
+            </div>
         </div>
-        <div class="col-md-4">
-    <div class="card service-card text-center p-4">
-        <i class="fas fa-spa service-icon"></i>  <!-- Esta es la línea que cambias -->
-        <h3>Manualidades de Flores</h3>
-        <p>Hermosas flores hechas a mano.</p>
-        <button class="btn btn-primary" id="showFlores">Mostrar Productos</button>
-    </div>
-</div>
-        <div class="col-md-4">
-          <div class="card service-card text-center p-4">
-            <i class="fas fa-heart service-icon"></i>
-            <h3>Detalles Especiales</h3>
-            <p>Diseños únicos para ocasiones especiales.</p>
-            <button class="btn btn-primary" id="showDetalles">Mostrar Productos</button>
-          </div>
+    </section>
+    <!-- Simplified Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Regala<span>Arte</span> y <span>Amor</span></h3>
+                    <p>Transformamos sentimientos en arte, creando momentos inolvidables que perduran en el tiempo.</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/regalaarteyamor/?igsh=MWNwN3BxNWI5YmhsMA%3D%3D#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/573024074846"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Regala Arte y Amor. Todos los derechos reservados.</p>
+               
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Productos Section -->
-  <section id="productos-cajitas" class="products-section d-none">
-    <div class="container">
-      <h2 class="text-center mb-4">Cajitas Personalizadas</h2>
-      <div class="product-grid">
-        <div class="product-item">
-          <img src="1.png" alt="Cajita Romántica">
-          <h5>Cajita Romántica</h5>
-          <p>Perfecta para sorprender a tu pareja.</p>
-        </div>
-        <div class="product-item">
-          <img src="1.png" alt="Cajita de Corazón">
-          <h5>Cajita de Corazón</h5>
-          <p>Ideal para regalos especiales.</p>
-        </div>
-        <div class="product-item">
-          <img src="1.png" alt="Cajita de Amor Eterno">
-          <h5>Cajita de Amor Eterno</h5>
-          <p>Diseño único para ocasiones especiales.</p>
-        </div>
-        <div class="product-item">
-          <img src="1.png" alt="Cajita de Sorpresa">
-          <h5>Cajita de Sorpresa</h5>
-          <p>Llena de detalles inesperados.</p>
-        </div>
-        <div class="product-item">
-          <img src="1.png" alt="Cajita de Recuerdos">
-          <h5>Cajita de Recuerdos</h5>
-          <p>Guarda momentos inolvidables.</p>
-        </div>
-        <div class="product-item">
-          <img src="1.png" alt="Cajita de Felicidad">
-          <h5>Cajita de Felicidad</h5>
-          <p>Llena de alegría y amor.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="productos-flores" class="products-section d-none">
-    <div class="container">
-      <h2 class="text-center mb-4">Manualidades de Flores</h2>
-      <div class="product-grid">
-        <div class="product-item">
-          <img src="1.png" alt="Ramo de Rosas">
-          <h5>Ramo de Rosas</h5>
-          <p>Hermosas rosas hechas a mano.</p>
-        </div>
-        <div class="product-item">
-          <img src="1.png" alt="Tulipanes de Papel">
-          <h5>Tulipanes de Papel</h5>
-          <p>Tulipanes coloridos y duraderos.</p>
-        </div>
-        <div class="product-item">
-          <img src="1.png" alt="Girasoles Artesanales">
-          <h5>Girasoles Artesanales</h5>
-          <p>Llenos de energía y vitalidad.</p>
-        </div>
-        <div class="product-item">
-          <img src="1.png" alt="Orquídeas Elegantes">
-          <h5>Orquídeas Elegantes</h5>
-          <p>Perfectas para ocasiones especiales.</p>
-        </div>
-        <div class="product-item">
-          <img src="1.png" alt="Lirios de Colores">
-          <h5>Lirios de Colores</h5>
-          <p>Un toque de elegancia y color.</p>
-        </div>
-        <div class="product-item">
-          <img src="1.png" alt="Margaritas Frescas">
-          <h5>Margaritas Frescas</h5>
-          <p>Simples pero hermosas.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonios Section -->
-  <section id="testimonials" class="testimonials-section">
-    <div class="container">
-      <h2 class="text-center mb-5">Lo que dicen nuestros clientes</h2>
-      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <p class="testimonial-text">"¡Un regalo perfecto para mi pareja! Muy recomendable."</p>
-            <p class="testimonial-author">- Ana G.</p>
-          </div>
-          <div class="carousel-item">
-            <p class="testimonial-text">"Las cajitas son hermosas y llenas de detalles."</p>
-            <p class="testimonial-author">- Luis R.</p>
-          </div>
-          <div class="carousel-item">
-            <p class="testimonial-text">"El servicio es impecable y los diseños son únicos."</p>
-            <p class="testimonial-author">- Carla M.</p>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer id="footer" class="footer text-center">
-    <div class="container">
-      <p>&copy; 2023 Detalles de Amor. Todos los derechos reservados.</p>
-      <div class="social-icons">
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Custom JS -->
-  <script src="scripts.js"></script>
+    </footer>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
